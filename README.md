@@ -77,8 +77,6 @@ SecureCoding/
 ├── LoginTest.java # JUnit login tests
 └── Sky_System_Secure_Coding_Final.docx # Report & documentation
 
-shell
-Copy code
 
 ### --
 
@@ -93,8 +91,6 @@ javac SecureCoding/*.java
 Run the application
 java SecureCoding.Main
 
-markdown
-Copy code
 
 ### --
 
