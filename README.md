@@ -77,76 +77,69 @@ SecureCoding/
 ├── LoginTest.java # JUnit login tests
 └── Sky_System_Secure_Coding_Final.docx # Report & documentation
 
-bash
+shell
 Copy code
 
 ### --
 
 ## ⚙️ Installation & Setup
-```bash
-# Clone this repository
+Clone this repository
 git clone https://github.com/farouq7assan0o/SecureCoding.git
 cd SecureCoding
 
-# Compile the Java files
+Compile the Java files
 javac SecureCoding/*.java
 
-# Run the application
+Run the application
 java SecureCoding.Main
---
-🧪 Testing
-Unit Testing (JUnit)
-Valid login returns true
 
-Wrong password increments login attempts
+markdown
+Copy code
 
-Account locks after 3 failures
+### --
 
-Password policy checks (length, uppercase, lowercase, digit, special char)
+## 🧪 Testing
 
-Integration Testing
-Login + data persistence (users, passengers, crew)
+### Unit Testing (JUnit)
+- Valid login returns true  
+- Wrong password increments login attempts  
+- Account locks after 3 failures  
+- Password policy checks (length, uppercase, lowercase, digit, special char)  
 
-Register and retrieve a passenger/crew
+### Integration Testing
+- Login + data persistence (users, passengers, crew)  
+- Register and retrieve a passenger/crew  
 
-User Acceptance Testing
-Passenger logs in, views/updates info
+### User Acceptance Testing
+- Passenger logs in, views/updates info  
+- Agent registers a new passenger  
+- Crew views assigned flight  
 
-Agent registers a new passenger
+### Security Testing
+- **Fuzz Testing** – login tested with 1k → 10k → 100k invalid attempts  
+- **SAST** – PMD issues listed in `output.csv`  
+- **DAST** – brute force lockout verified  
+- **Regression Testing** – reran old tests after updates  
 
-Crew views assigned flight
+### --
 
-Security Testing
-Fuzz Testing – login tested with 1k → 10k → 100k invalid attempts
+## 📊 Documentation & Analysis
+- **Use Case & Misuse Case Diagrams** (login, register, update, view)  
+- **Data Flow Diagrams (DFD)** with threat modeling analysis  
+- **Testing Reports** – JUnit test cases (login + password policy)  
+- **Static Code Analysis** – rule violations & fixes in `output.csv`  
 
-SAST – PMD issues listed in output.csv
+📷 Add diagrams in an `assets/` folder and update links accordingly.  
 
-DAST – brute force lockout verified
+### --
 
-Regression Testing – reran old tests after updates
+## 🚀 Technologies Used
+- **Java SE**  
+- **JUnit** (unit testing)  
+- **PMD** / static analysis tools  
+- **OWASP practices** (validation, logging, password policies)  
 
---
-📊 Documentation & Analysis
-Use Case & Misuse Case Diagrams (login, register, update, view)
+### --
 
-Data Flow Diagrams (DFD) with threat modeling analysis
-
-Testing Reports – JUnit test cases (login + password policy)
-
-Static Code Analysis – rule violations & fixes in output.csv
-
-📷 Add diagrams in an assets/ folder and update links accordingly.
-
---
-🚀 Technologies Used
-Java SE
-
-JUnit (unit testing)
-
-PMD / static analysis tools
-
-OWASP practices (validation, logging, password policies)
-
---
-📄 License
-This project is provided for educational and academic purposes under the MIT License.
+## 📄 License
+This project is provided for **educational and academic purposes** under the **MIT License**.
